@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para o Amor da Minha Vida</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background: linear-gradient(to bottom right, #ffeef8, #fff5f9);
+      }
+      h1,
+      .romantic-font {
+        font-family: "Dancing Script", cursive;
+      }
+      .hearts {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 10;
+      }
+      .heart {
+        position: absolute;
+        animation: float 6s linear infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-pink-900">
+    <audio autoplay loop>
+      <source
+        src="Alex Sparrow- She's Crazy But She's Mine (Lyrics Video).mp3"
+        type="audio/mpeg"
+      />
+      Seu navegador não suporta áudio.
+    </audio>
+
+    <div class="hearts" id="hearts-container"></div>
+
+    <div
+      id="intro"
+      class="h-screen flex flex-col justify-center items-center text-center bg-pink-100 px-4"
+    >
+      <h1 class="text-4xl md:text-6xl romantic-font mb-4">Oi, meu amor 💖</h1>
+      <h1 class="text-4xl md:text-6xl romantic-font mb-4">J ❤️ M</h1>
+      <p class="mb-6 text-lg">Preparei algo especial para você...</p>
+      <button
+        onclick="enterSite()"
+        class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full shadow-lg"
+      >
+        Entrar
+      </button>
+    </div>
+
+    <div id="main-content" class="hidden px-4 py-10 md:px-20">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl romantic-font mb-4">Nossa História 💕</h2>
+        <p class="text-lg max-w-2xl mx-auto">
+          Desde que te conheci, minha vida ganhou cor, sentido e muito amor.
+          Cada momento ao seu lado é único e especial. Essa é uma pequena forma
+          de te lembrar o quanto você é importante pra mim.
+        </p>
+      </div>
+
+      <h5 class="text-3xl romantic-font mb-10 text-center">
+        Um memorial sobre nós
+      </h5>
+
+      <!-- Galeria ajustada -->
+      <div class="space-y-10 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="fofo.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            Nossa fotinha linda que você tá tão feliz... eu real acho mt
+            bonitinho você toda felizinha comigo.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img
+            src="casalzao.jpeg"
+            class="rounded-2xl shadow-md w-full h-auto"
+          />
+          <p class="text-lg romantic-font">
+            A nossa foto mais foda, olha isso! Se não somos mt fodásticos.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="praia.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            Nessa a gente tá tão lindo. Olha o brilho nos nossos olhos.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img
+            src="casalzao2.jpeg"
+            class="rounded-2xl shadow-md w-full h-auto"
+          />
+          <p class="text-lg romantic-font">
+            Essa tô meio estranho, mas segue a linha de ser fodão. Adorei!
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="lindos.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            A gente lindinho no meio da festa, só sendo viadinho. Eu adoro isso!
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="mimindo.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            Eu sei que você não gosta dessa, mas é tão fofo você dormindo no meu
+            colo.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="sim.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            Sei que você não gosta também, mas foi tão espontâneo que eu amei.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="pasteu.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">PASTEEEEEEEEL MUAHAHAHHAHAHAHA</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="image.png" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            Nessa festa você tava tão linda, mas nem pude ficar com você
+            direito. Tortura.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="genshim.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            Nós prestes a realizar o maior ato de amor do Genshin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img
+            src="genshim2.jpeg"
+            class="rounded-2xl shadow-md w-full h-auto"
+          />
+          <p class="text-lg romantic-font">
+            Agora sim oficialmente interlinked.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img src="desegno.jpeg" class="rounded-2xl shadow-md w-full h-auto" />
+          <p class="text-lg romantic-font">
+            EU AMEI TANTO ESSE DESENHO QUE EU TIVE QUE COLOCAR NSS AAAAAAA
+          </p>
+        </div>
+      </div>
+
+      <!-- Carta -->
+      <div
+        class="bg-white bg-opacity-80 rounded-xl p-6 shadow-md max-w-3xl mx-auto mt-16"
+      >
+        <h3 class="text-2xl romantic-font mb-4">Uma Carta Para Você ✨</h3>
+        <p></p>
+        <p>
+          helloooooooooooooooooooooooooooooooooooooo meu amorzinho. Eu sei que a gente ainda não é “oficial”, mas pra
+          ser sincero? Nada disso importa tanto quanto o que eu sinto quando tô
+          com você. Eu precisava dar um jeito de eternizar esse momento. Porque,
+          desde que você chegou, tudo mudou. Antes, o Dia dos Namorados era só
+          mais um dia meio vazio, meio cinza. Eu sempre passei essa data
+          sozinho, tentando fingir que não ligava, tentando não me importar em
+          ver todo mundo comemorando enquanto eu só existia. E agora, com você
+          do meu lado, tudo esta diferente . Mesmo sem ser oficialmente
+          minha namorada — ainda né — você já é parte de mim de um jeito que
+          eu não sei explicar. Você me dá paz. Dá sentido até pros dias que
+          antes pareciam bobos. Você faz eu querer viver.
+          Obrigado por ser essa pessoa tão doce, tão incrível, tão você.
+          Obrigado por cuidar de mim até nos meus dias mais capengas, por me
+          escutar mesmo quando eu mal consigo falar, por entender minhas dores
+          mesmo quando nem eu entendo direito. Você tem esse dom de me acolher,
+          de me fazer sentir menos perdido. Você é tão meiga, tão atenta, tão
+          interessada em mim, no que eu sinto, no que eu penso, que às vezes me
+          pergunto como é que alguém tão maravilhosa cruzou meu caminho. Amor,
+          você me faz querer ser melhor. Você me faz sorrir sem nem perceber(minha bochecha esta doendo agoar). E
+          mais do que tudo, você me dá vontade de cuidar, de proteger, de fazer
+          de tudo pra que o seu mundo seja um lugar mais bonito. Eu te amo
+          tanto. De um jeito tao intenso,  minha alma clama por voce. Te amo
+         na risada, no jeito que você fala, nas suas manias, na sua
+          voz,nos seu olhoes no ,seu altismo ,na sua maneira de perceber o mundo . eu
+          queria poder te dar o mundo, mas por agora, te dou esse pedacinho de
+          mim. Eu Quero estar
+          contigo nos dias bons e principalmente nos dias difíceis. Você é meu
+          bem mais precioso, minha parte favorita da vida. 
+           é muito mais do que eu sonhei um dia ter. Obrigado por
+          existir minha gatinha❤️
+        </p>
+        <p class="mt-4 text-right">
+          Com todo o meu amor,<br />Seu eterno cachorrinho
+        </p>
+      </div>
+
+      <!-- Música -->
+      <div class="mt-10 text-center">
+        <h4 class="romantic-font text-2xl mb-2">Nossa música 🎵</h4>
+        <p class="text-lg">Crazy But She's Mine - Alex Aiono</p>
+      </div>
+
+      <!-- Botões surpresa -->
+      <div class="mt-10 flex flex-col items-center space-y-4">
+        <button
+          onclick="showSurprise1()"
+          class="bg-pink-400 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-full"
+        >
+          Clique aqui 💌
+        </button>
+        <button
+          onclick="showSurprise2()"
+          class="bg-red-400 hover:bg-red-500 text-white font-bold py-2 px-4 rounded-full"
+        >
+          Outra surpresa 🎁
+        </button>
+      </div>
+
+      <div
+        id="surprise-msg"
+        class="mt-4 text-center text-xl romantic-font hidden"
+      >
+        BLE AKAKAKKA 💖🐾
+      </div>
+
+      <div id="surprise-heart" class="mt-4 text-center text-4xl hidden">
+        🐱❤️🐶
+      </div>
+    </div>
+
+    <script>
+      function enterSite() {
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }
+
+      function showSurprise1() {
+        document.getElementById("surprise-msg").classList.remove("hidden");
+      }
+
+      function showSurprise2() {
+        document.getElementById("surprise-heart").classList.remove("hidden");
+      }
+
+      const heartsContainer = document.getElementById("hearts-container");
+      setInterval(() => {
+        const emoji = document.createElement("div");
+        emoji.className = "heart";
+        emoji.style.left = Math.random() * 100 + "vw";
+        emoji.style.fontSize = Math.random() * 30 + 24 + "px";
+        emoji.innerHTML = "🐱❤️🐶";
+        heartsContainer.appendChild(emoji);
+        setTimeout(() => emoji.remove(), 6000);
+      }, 500);
+    </script>
+  </body>
+</html>
