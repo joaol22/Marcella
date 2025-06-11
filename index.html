@@ -63,10 +63,12 @@
       <h1 class="text-4xl md:text-6xl romantic-font mb-4">Oi, meu amor 💖</h1>
       <h1 class="text-4xl md:text-6xl romantic-font mb-4">J ❤️ M</h1>
       <p class="mb-6 text-lg">Preparei algo especial para você...</p>
-      <button
-        onclick="enterSite()"
-        class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full shadow-lg"
-      >
+    <button
+  onclick="enterSite()"
+  class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full shadow-lg"
+>
+  Entrar
+</button>
         Entrar
       </button>
     </div>
@@ -249,15 +251,20 @@
     </div>
 
     <script>
- function enterSite() {
+function enterSite() {
+  const player = document.getElementById('player');
+  
+  // Garante que o play seja iniciado pela interação direta do botão
+  player.play().then(() => {
+    console.log("Música começou");
+  }).catch((error) => {
+    console.log("Erro ao iniciar a música:", error);
+  });
+
   document.getElementById('intro').style.display = 'none';
   document.getElementById('main-content').style.display = 'block';
-
-  const player = document.getElementById('player');
-  player.play().catch((error) => {
-    console.log("Autoplay bloqueado pelo navegador:", error);
-  });
 }
+
 
 
 
