@@ -47,10 +47,11 @@
     </style>
   </head>
   <body class="text-pink-900">
-    <audio id="player" autoplay>
+   <audio id="player">
   <source id="audio-source" src="alex-crazy.mp3" type="audio/mpeg">
   Seu navegador não suporta áudio.
 </audio>
+
 
 
     <div class="hearts" id="hearts-container"></div>
@@ -248,12 +249,16 @@
     </div>
 
     <script>
-   function enterSite() {
+ function enterSite() {
   document.getElementById('intro').style.display = 'none';
   document.getElementById('main-content').style.display = 'block';
+
   const player = document.getElementById('player');
-  player.play().catch(e => console.log("Autoplay bloqueado"));
+  player.play().catch((error) => {
+    console.log("Autoplay bloqueado pelo navegador:", error);
+  });
 }
+
 
 
 
